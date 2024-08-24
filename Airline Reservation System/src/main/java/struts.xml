@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC 
+	"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+	"http://struts.apache.org/dtds/struts-2.0.dtd">
+	
+	
+	<struts>
+<package name="default" extends="struts-default">
+
+<action name="AddFl" class="p1.LoginAction" method="AddNewFlt">
+<result name="dispflt">/FlightManagement.jsp</result>
+</action>
+
+<action name="AddFlight" class="p1.LoginAction" method="FlightMgt">
+<result name="dispflt">/AddFlight.jsp</result>
+</action>
+
+<action name="AddFlt" class="p1.LoginAction" method="AddFlight">
+<result name="dispflt">/FlightManagement.jsp</result>
+</action>
+
+<action name="AddPassenger" class="p1.LoginAction" method="AddPassenger">
+<result name="addpass">/BookingForm.jsp</result>
+<result name="addpassfail">/BookingForm.jsp</result>
+</action>
+
+<action name="ApprovedCust" class="p1.LoginAction" method="ApprovedCust">
+<result name="dispcust">/ViewCustomer.jsp</result>
+</action>
+
+<action name="Book" class="p1.LoginAction" method="Book">
+<result name="customer1">/BookPartFlt.jsp</result>
+</action>
+
+<action name="BookTkt" class="p1.LoginAction" method="BookTkt">
+<result name="success">/BookingForm.jsp</result>
+</action>
+
+<action name="Buy" class="p1.LoginAction" method="Buy">
+<result name="success">/ChooseBankingType.jsp</result>
+</action>
+
+<action name="Cancel" class="p1.LoginAction" method="Cancel">
+<result name="success">/CancellationConfirm.jsp</result>
+</action>
+
+<action name="CancelConfirm" class="p1.LoginAction" method="CancelConfirm">
+<result name="success">/CustHome.jsp</result>
+</action>
+
+<action name="Cancellation" class="p1.LoginAction" method="Cancellation">
+<result name="success">/ViewCancellation.jsp</result>
+</action>
+
+<action name="ChangePass" class="p1.LoginAction" method="ChangePass">
+<result name="success">/CustHome.jsp</result>
+<result name="fail">/CustHome.jsp</result>
+</action>
+
+<action name="ChangePsw" class="p1.LoginAction" method="ChangePsw">
+<result name="success">/PasswordChange.jsp</result>
+</action>
+
+<action name="CheckFare" class="p1.LoginAction" method="CheckFare">
+<result name="success">/FareEnq1.jsp</result>
+</action>
+
+<action name="CheckFlt" class="p1.LoginAction" method="CheckFlt">
+<result name="success">/CheckFlight.jsp</result>
+</action>
+
+<action name="ChooseBank" class="p1.LoginAction" method="ChooseBank">
+<result name="SBINET">/SBINetBanking.jsp</result>
+<result name="SBIDEBIT">/SBINetBanking.jsp</result>
+<result name="ICICINET">/ICICINetBanking.jsp</result>
+<result name="ICICIDEBIT">/SBINetBanking.jsp</result>
+</action>
+
+<action name="CreditCard" class="p1.LoginAction" method="ChooseBanking">
+<result name="success">/BankChoose.jsp</result>
+</action>
+
+<action name="CustomerManagement" class="p1.LoginAction" method="CustMgt">
+<result name="dispcust">/ViewCustomer.jsp</result>
+</action>
+
+<action name="DebitCard" class="p1.LoginAction" method="ChooseBanking">
+<result name="success">/BankChoose.jsp</result>
+</action>
+
+<action name="DeleteFlight" class="p1.LoginAction" method="FlightMgt">
+<result name="dispflt">/DeleteFlight.jsp</result>
+</action>
+
+<action name="DelPerFlightInfo" class="p1.LoginAction" method="DelPerFlightInfo">
+<result name="dispflt">/FlightManagement.jsp</result>
+</action>
+
+<action name="EditOwn" class="p1.LoginAction" method="EditOwn">
+<result name="edit">/EditMyProfile.jsp</result>
+</action>
+
+<action name="EditPerFlight" class="p1.LoginAction" method="EditPerFlight">
+<result name="dispflt">/EditFlight.jsp</result>
+</action>
+
+<action name="FareEnq" class="p1.LoginAction" method="FlightMgt">
+<result name="dispflt">/FareEnq.jsp</result>
+</action>
+
+
+<action name="FlightManagement" class="p1.LoginAction" method="FlightMgt">
+<result name="dispflt">/FlightManagement.jsp</result>
+</action>
+
+<action name="ForgotPsw" class="p1.LoginAction" method="ForgotPsw">
+<result name="success">/RecoverPsw.jsp</result>
+<result name="fail">/ForgotPsw.jsp</result>
+</action>
+
+<action name="GetFlightid" class="p1.NewRegister" method="GetFlightid"></action>
+
+<action name="LoginAction" class="p1.LoginAction" method="Login">
+<result name="admin">/AdminHome.jsp</result>
+<result name="customer">/CustHome.jsp</result>
+<result name="customer1">/BookPartFlt.jsp</result>
+<result name="loginfail">/Login.jsp</result>
+</action>
+
+
+
+<action name="LoginBank" class="p1.LoginAction" method="LoginBank">
+<result name="success">/SBINetBanking1.jsp</result>
+<result name="fail">/SBINetBanking.jsp</result>
+</action>
+
+<action name="MyBooking" class="p1.LoginAction" method="MyBooking">
+<result name="success">/MyBooking.jsp</result>
+</action>
+
+<action name="MyProfile" class="p1.LoginAction" method="MyProfile">
+<result name="view">/MyProfile.jsp</result>
+</action>
+
+<action name="NetBanking" class="p1.LoginAction" method="ChooseBanking">
+<result name="success">/BankChoose.jsp</result>
+</action>
+
+<action name="NotCancel" class="p1.LoginAction" method="NotCancel">
+<result name="success">/CustHome.jsp</result>
+</action>
+
+<action name="PaySBINet" class="p1.LoginAction" method="PaySBINet">
+<result name="success">CustHome.jsp</result>
+<result name="fail">/SBINetBanking2.jsp</result>
+</action>
+
+<action name="RecoverPsw" class="p1.LoginAction" method="RecoverPsw">
+<result name="success">/ShowPassword.jsp</result>
+<result name="fail">/ForgotPsw.jsp</result>
+</action>
+
+<action name="RegnAction" class="p1.LoginAction" method="RegCust">
+<result name="registersuccess">/NewUser.jsp</result>
+<result name="registerfail">/NewUser.jsp</result>
+</action>
+
+<action name="RejectCust" class="p1.LoginAction" method="RejectCust">
+<result name="dispcust">/ViewCustomer.jsp</result>
+</action>
+
+<action name="SeatAvailEnq" class="p1.LoginAction" method="FlightMgt">
+<result name="dispflt">/SeatAvailEnq.jsp</result>
+</action>
+
+<action name="SelectCust" class="p1.LoginAction" method="SelectCust">
+<result name="displaycust">/ViewUser.jsp</result>
+<result name="dispcust">/ViewCustomer.jsp</result>
+</action>
+
+<action name="ShDelFlight" class="p1.LoginAction" method="ShDelFlight">
+<result name="dispflt">/DeleteFlight.jsp</result>
+</action>
+
+<action name="ShowBook" class="p1.LoginAction" method="ShowBook">
+<result name="success">/ShowBooking.jsp</result>
+</action>
+
+<action name="ShowFl" class="p1.LoginAction" method="ShowFl">
+<result name="success">/BookPartFlight.jsp</result>
+</action>
+
+<action name="ShowFlight" class="p1.LoginAction" method="ShowFlight">
+<result name="success">/ShowFlight.jsp</result>
+</action>
+
+<action name="SubmitPassanger" class="p1.LoginAction" method="SubmitPassanger">
+<result name="success">/ShowPassanger.jsp</result>
+</action>
+
+<action name="UpdateFlt" class="p1.LoginAction" method="UpdateFlt">
+<result name="dispflt">/FlightManagement.jsp</result>
+</action>
+
+<action name="UpdateOwn" class="p1.LoginAction" method="UpdateOwn">
+<result name="update">/CustHome.jsp</result>
+</action>
+
+<action name="ViewBooking" class="p1.LoginAction" method="FlightMgt">
+<result name="dispflt">/ViewBooking.jsp</result>
+</action>
+
+<action name="ViewBooking1" class="p1.LoginAction" method="ViewBooking">
+<result name="success">/ViewBooking1.jsp</result>
+<result name="dispflt">/ViewBooking.jsp</result>
+</action>
+
+<action name="ViewFlight" class="p1.LoginAction" method="ViewFlight">
+<result name="success">/ViewPartFlight.jsp</result>
+</action>
+
+<action name="YesSBINet" class="p1.LoginAction" method="CheckFare">
+<result name="success">/SBINetBanking2.jsp</result>
+</action>
+
+
+</package>
+</struts>    
+	
